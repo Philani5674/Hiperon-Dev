@@ -25,6 +25,8 @@ def say_the_number(n):
     """
 
     # Special case for zero
+    if 99<n<1000 and n%100==0:
+        return (ones[n//100] + " hundred.").capitalize()
     if n==0:
         return "Zero."
     pieces,sorted_rank = get_number_pieces(n)

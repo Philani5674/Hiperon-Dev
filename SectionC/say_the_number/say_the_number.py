@@ -121,4 +121,3 @@ def join_with_commas(pieces, sorted_rank):
 	"""
 	return ", ".join(pieces[1:][::-1]) + " and " + pieces[0] if len(pieces)>1 and sorted_rank[0]<100 else ", ".join(pieces[::-1]) if len(pieces)>1 else pieces[0]
 
-
